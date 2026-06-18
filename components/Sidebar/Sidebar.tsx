@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Search, Plus, Download, Upload, Pin, Code2, X } from 'lucide-react'
 import { useRef } from 'react'
 import { exportToJSON, importFromJSON } from '@/lib/storage'
+import Image from "next/image";
 
 function isTauri() {
   return typeof window !== 'undefined' && '__TAURI_INTERNALS__' in window
@@ -52,7 +53,7 @@ function SidebarContent({ onClose }: { onClose?: () => void }) {
       <div className="px-4 pt-4 pb-3 border-b border-zinc-200 dark:border-zinc-800 flex-shrink-0">
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2">
-            <Code2 size={18} className="text-zinc-500" />
+            <Image src={"/logo.png"} alt={"logo"} width={24} height={24} />
             <span className="font-medium text-[15px] text-zinc-900 dark:text-zinc-100">SnippetVault</span>
           </div>
           <div className="flex gap-1 items-center">
