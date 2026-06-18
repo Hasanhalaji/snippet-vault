@@ -57,7 +57,7 @@ It's a plain, human-readable JSON file — back it up, sync it with Dropbox, or 
 ### Run as a web app (fastest, no extra tools)
 
 ```bash
-git clone https://github.com/<your-username>/snippetvault
+git clone https://github.com/Hasanhalaji/snippetvault
 cd snippetvault
 npm install
 npm run dev
